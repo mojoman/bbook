@@ -1,0 +1,407 @@
+%-----Преамбула
+\documentclass[a4paper,12pt,oneside,openbib]{book}
+
+
+%-----Используемые пакеты
+%-общие пакеты
+\usepackage{indentfirst}
+\usepackage[cp1251]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel,varioref}
+\usepackage{makeidx}
+\usepackage[centerlast,small]{caption2}
+\usepackage{textcomp}
+%-графика
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{epic,bez123}
+\usepackage{floatflt}
+%\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{ifpdf}
+\usepackage{pgf}
+\usepackage{pstricks}%variant: \usepackage{pst-all}
+
+
+%-математика
+%\usepackage{theorem}
+\usepackage[psamsfonts]{amssymb}
+\usepackage{amsmath,amsfonts}
+\usepackage{amsthm}
+\usepackage[mathscr]{eucal}
+\usepackage{enumerate}
+
+
+%-----Стили математических переменных окружения
+
+\newtheoremstyle{break}% name
+  {9pt}%      Space above, empty = `usual value'
+  {9pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+
+
+\newtheoremstyle{note}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {\itshape}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\newtheoremstyle{commnt}% name
+  {9pt}%      Space above, empty = `usual value'
+  {9pt}%      Space below
+  {\slshape}  % Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries \slshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+
+%-----Математические переменные окружения
+\theoremstyle{break}
+\newtheorem{teo}{Теорема}[chapter]
+\newtheorem{lem}[teo]{Лемма}
+\newtheorem{sta}[teo]{Утверждение}
+\newtheorem{prop}[teo]{Предложение}
+\newtheorem{dfn}{Определение}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{axi}{Предположение}[section]
+\newtheorem*{corol}{Следствие}
+\newtheorem{teop}[teo]{Теорема}
+\newtheorem{lemp}[teo]{Лемма}
+
+\theoremstyle{definition}
+\newtheorem{exer}{Упражнение}[chapter]
+\newtheorem*{note}{Замечание}
+
+\theoremstyle{commnt}
+\newtheorem*{comm}{Экономический комментарий}
+\newtheorem*{exam}{Пример}
+
+%-----Инициализация команд
+\newcommand{\conts}{\usefont{T2A}{cmr}{m}{ui}}
+\newcommand{\remrk}[1]{\bigskip\texttt{#1}\bigskip}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Lgr}{\mathscr{L}}
+\newcommand{\st}[1]{\mathbb{#1}}
+\newcommand{\vc}[1]{\mathbf{#1}}
+\newcommand{\dw}[1]{\textsl{\textbf{#1}}}
+
+%-----Переинициализация команд
+\renewcommand{\chaptername}{Модуль}
+\renewcommand{\captionlabeldelim}{.}
+%\renewcommand{\bibname}{Список основной литературы \\к книге\\<<Введение в математическую экономику>>}
+%\renewcommand{\baselinestretch}{1.25}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\hspace{1em}}
+\makeatother
+
+
+%-----Настройки
+%\makeindex
+
+%\setlength{\intextsep}{50pt}
+
+%\setlength{\abovecaptionskip}{-5pt}
+
+\sloppy
+
+\graphicspath{{pics/}}
+\includeonly{predvelich, 02_Linear, convex, nelin-opt, Raznoe}
+
+\title{Материалы для книги \\ <<Введение в математическую экономику>>}
+\author{}
+\date{\today}
+
+
+%====================================НАЧАЛО ДОКУМЕНТА
+\begin{document}
+\maketitle
+
+
+%-----Предисловие
+\frontmatter
+\include{designations}
+
+
+%-----Основная часть
+\mainmatter
+\include{predvelich}
+\include{02_Linear}
+\include{convex}
+\include{nelin-opt}
+\include{01_Convex}
+\include{Raznoe}
+
+%-----Приложения
+\appendix
+\include{appendix}
+
+
+%-----Заключение
+%\backmatter
+%\printindex
+
+
+%-----Библиография
+\include{bibliography}
+
+\end{document}
+
+
+%===================================КОНЕЦ ДОКУМЕНТА
+
+\chapter{Запасные куски}
+%==============================================
+\section{Теоремы отделимости}
+
+Более современный метод доказательства теорем об отделимости основан
+на использовании особенностей топологической структуры выпуклых
+множеств. Именно поэтому в современной литературе используются два
+следующих варианта формулировки этой теоремы. Доказательства этих
+теорем см., например, в \cite{Nikaido:1972}, \cite{Takayama:1985}.
+
+
+\begin{teo}(без доказательства)\label{teo_3.2_Nikaido}
+
+Пусть $X$ -- замкнутое непустое выпуклое множество в $R^n$. Если
+точка $a$ не принадлежит $X$, то имеет место следующее:
+
+\begin{enumerate}
+\renewcommand{\theenumi}{(\roman{enumi})}
+
+  \item Существует гиперплоскость $\sum\limits_{i = 1}^n {\pi_i
+  x_i}=\beta$, такая, что $\sum\limits_{i = 1}^n {\pi_i
+  x_i}< \beta$, и полупространство $\sum\limits_{i = 1}^n {\pi_i
+  x_i} \geq \beta$ содержит множество $X$.
+
+  \item При указанных выше коэффициентах $\pi_i$ гиперплоскость
+  $\sum\limits_{i = 1}^n {\pi_i \cdot \left( {x_i  - a_i } \right)}
+  =0$ определяет открытое полупространство $\sum\limits_{i = 1}^n {\pi_i \cdot \left( {x_i  - a_i } \right)}
+  > 0$, содержащее множество $X$.
+
+\end{enumerate}
+
+\end{teo}
+
+\begin{teo}(без доказательства) \nopagebreak[4]
+
+Пусть $X$ -- открытое непустое выпуклое множество в $R^n$. Если
+точка $a$ не принадлежит $X$, то существует гиперплоскость
+$\sum\limits_{i = 1}^n {\pi_i \cdot \left( {x_i  - a_i }
+\right)}=0$, проходящая через точку $a$ и такая, что множество $X$
+содержится в открытом полупространстве $\sum\limits_{i = 1}^n {\pi_i
+\cdot \left( {x_i  - a_i } \right)} > 0$.
+
+\end{teo}
+
+%========================================
+С учетом сделанного замечания можно сформулировать следующий часто
+встречающийся вариант леммы Минковского-Фаркаша.
+
+\begin{lem}(Минковского-Фаркаша, II вариант, без доказательства)  \label{MinkFarcas2}
+
+Если заданы векторы $a^1, a^2, \ldots, a^l$ и $b\neq0$ в
+пространстве $R^n$, то может выполняться в точности одна из двух
+приводимых ниже альтернатив.
+
+\begin{enumerate}
+\renewcommand{\theenumi}{(\roman{enumi})}
+
+  \item Существуют неотрицательные и одновременно не равные нулю
+  числа $\lambda_k$, $k=1 \ldots l$, такие, что $b=\sum\limits_{k=1}^l{\lambda_k
+  a^k}$.
+
+  \item Существует вектор $x \in R^n$, такой, что $b \cdot x < 0$ и $a^k \cdot x \geq 0$, $k=1 \ldots l$.
+
+\end{enumerate}
+
+
+ Предположим, что $b \cdot x \geq 0$
+для любых $x \in R^n$, таких, что $a^k \cdot x \geq 0$, $k=1 \ldots
+l$. Тогда существуют неотрицательные числа $\lambda_1, \lambda_2,
+\ldots, \lambda_l$, одновременно не равные нулю, такие, что
+$b=\sum\limits_{k=1}^l{\lambda_k a^k}$.
+
+\end{lem}
+
+%==========Эффективные точки
+Традиционным (неоклассическим) подходом к анализу производства
+является описание его в терминах \textbf{производственной функции}.
+\index{производственная функция} Производственная функция -- это
+функция, описывающая количественное технологическое соотношение
+между различными объемами вкладываемых в производство факторов и
+объемами выпуска.
+
+Однако такой подход является излишне ограничивающим в том смысле,
+что предполагает существование \emph{эффективного менеджера},
+способного максимизировать выпуск производства при заданном
+ограниченном количестве факторов. Такого рода подход основывается на
+<<анализе предельных величин>>.
+
+Другой подход, основанный на <<анализе видов деятельности>>,
+постулирует наличие \emph{набора} производственных способов,
+доступных для фирмы (для набора фирм, для экономики в целом). Такое
+множество называется \textbf{производственным множеством}.
+\index{производственное множество}
+
+Элемент такого множества называется \emph{производственным
+процессом} или \emph{видом деятельности}. Он представляет собой
+вектор $n-$мерного пространства, описывающий технологическое
+соотношение между вложениями факторов и выпуском в рамках одного
+производственного процесса.
+
+\remrk{Можно добавить подробнее про описание модели, устройство
+векторов, предположения о товарах и др.}
+
+Пусть $Y$ -- множество всех технологически доступных
+(\remrk{пояснить}) производственных процессов для данной фирмы
+(экономики и т.д.). Будем предполагать, что $Y \subset R^n$. Элемент
+(вектор-столбец) $y \in Y$ обозначает производственный процесс и
+имеет следующую структуру:
+
+\[
+y = \left( {\begin{array}{*{20}c}
+   {y_1 }  \\
+   {y_2 }  \\
+    \vdots   \\
+   {y_n }  \\
+\end{array}} \right),
+\]
+
+
+\noindent где $y_i$ является \emph{выпуском}, если $y_i>0$, и
+\emph{затратами}, если $y_i<0$.
+
+На производственное множество $Y$ накладываются следующие
+предположения (\remrk{можно изложить подробнее по
+\cite{Takayama:1985}}).
+
+\begin{axi}(Аддитивность)
+
+Если $y' \in Y$ и $y'' \in Y$, то $y' + y'' \in Y$. \end{axi}
+
+\begin{axi}(Пропорциональность)
+
+Если $y' \in Y$, то  $\alpha y' \in Y$ для любых $\alpha \geq 0,
+\alpha \in R$.\end{axi}
+
+\begin{axi}(Конечное число базовых видов деятельности)
+
+Задано конечное число видов деятельности $a^j$, $j=1 \ldots m$, так,
+что множество $Y$ представляет собой многогранное выпуклый конус,
+порожденный этими видами деятельности. Эти $a^j$, $j=1 \ldots m$,
+называются \textbf{базовыми видами деятельности}. \end{axi}
+
+\begin{axi}(Продуктивность)
+
+Существует такой элемент $y \in Y$, у которого по крайней мере один
+из компонентов строго положителен. \end{axi}
+
+\begin{axi}(Отсутствие <<рога изобилия>> [в книге <<No land of
+Cockaigne>>]) \label{noCocaigne}
+
+Если $y \geq 0$, то $y \notin Y $. Или $Y \cap R^n_+ = {0}$.
+\end{axi}
+
+\begin{axi}(Необратимость производственного
+процесса)\label{Irreversibility}
+
+Если $y \in Y $ и $y \neq 0$, то $-y \notin Y$. Или $Y \cap (-Y) =
+{0}$.
+\end{axi}
+
+На приводимом Рис. \ref{NoIrreversibility} в случае (a) не
+выполняется Предположение \ref{Irreversibility}. В случае (b)
+выполняются все предположения.
+
+\begin{figure}
+  \includegraphics{noirreversibility}\\
+  \caption{Иллюстрация к предположениям \cite{Takayama:1985}}\label{NoIrreversibility}
+\end{figure}
+
+Важным следствием Предположения \ref{noCocaigne} является следующее
+утверждение.
+
+\begin{teo}(о нулевой максимальной прибыли)
+
+Пусть $Y = \{ y: y= A \cdot \lambda, \lambda \geq 0 \}$. Множество
+$Y$ удовлетворяет Предположению \ref{noCocaigne} тогда и только
+тогда, когда существует такой вектор $\pi \in R^n, \pi > 0$, что
+$\pi \cdot y \leq 0$ для любых $y \in Y$.
+
+\end{teo}
+
+Экономический смысл этой теоремы можно понять, если интерпретировать
+вектор $\pi$, как вектор цен. Тогда $p \cdot y$ -- прибыль от
+вектора $y$. Отсюда, в частности, утверждение, что <<$\pi \cdot y
+\leq 0$ для любых $y \in Y$>> означает, что максимальное значение
+прибыли равно нулю.
+
+В общем случае, когда множество $Y$ представляет собой набор
+комбинаций затрат-выпусков, которые технически доступны для фирмы,
+оно называется <<обобщенным производственным множеством>>.
+
+На обобщенное производственное множество накладываются следующие
+ограничения.
+
+
+\begin{enumerate}
+\renewcommand{\theenumi}{(\roman{enumi})}
+  \item Множество замкнуто.
+  \item Есть возможность бездействия ($0 \in Y$).
+  \item Продуктивность.
+  \item Отсутствие <<рога изобилия>>.
+  \item Необратимость производственного процесса.
+  \item Возможность \emph{свободного расходования} ($y \in (-R^n_+) \Rightarrow y \in Y$ или $(-R^n_+) \subset
+  Y$).
+  \item Множество $Y$ является многогранным выпуклым
+  конусом / выпуклым конусом / выпуклым множеством.
+\end{enumerate}
+
+
+%====Фундаментальная теорема
+\begin{teo}(Фундаментальная теорема, \cite{Takayama:1985})
+
+Пусть $X$ --- выпуклое множество в $R^n$. Пусть заданы вогнутые
+функции $f_1 (x),f_2 (x), \ldots, f_m (x): X \to R$. Если система
+
+\[
+f_j(x)>0, j=1 \ldots m
+\]
+
+\noindent не имеет решения на множестве $X$, то существуют такие
+коэффициенты $p_1, p_2, \ldots, p_m \geq 0$, $p_j \in R$, не все
+одновременно равные нулю, что для любых $x \in X$ выполняется:
+
+\[
+\sum \limits_{j=1}^{m}{p_j f_j(x)} \leq 0.
+\]
+
+\end{teo}
+
+Имеет место следующее следствие.
+
+\begin{corol}
+
+Пусть $X$ --- выпуклое множество в $R^n$. Пусть заданы вогнутые
+функции $f_1 (x),f_2 (x), \ldots, f_m (x): X \to R$.
+
+Тогда либо система $f_j(x)>0, j=1 \ldots m$, не имеет решения на
+множестве $X$, либо существуют такие коэффициенты $p_1, p_2, \ldots,
+p_m \geq 0$, $p_j \in R$, не все одновременно равные нулю, что для
+любых $x \in X$ выполняется $\sum \limits_{j=1}^{m}{p_j f_j(x)} \leq
+0$.
+
+\end{corol}

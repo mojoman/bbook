@@ -1,0 +1,51 @@
+%<TpX v="3" l="8.91031" t="111.795" r="138.942" b="64.6024" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigurePlacement="h">
+%  <caption label="fig:sep-sets">»ллюстраци€ теоремы о раздел€ющей гиперплоскости</caption>
+%  <curve closed="1">27.7829,82.0405 14.5799,94.5363 17.3012,95.2032 22.8282,94.0681 27.121,89.0041</curve>
+%  <line x1="29.8621" y1="83.809" x2="29.8621" y2="83.809"/>
+%  <line x1="43.1694" y1="75.5289" x2="19.5719" y2="105.417"/>
+%  <text x="37.4989" y="100.35" t="X" tex="$\st{X}$" h="4.84"/>
+%  <rect x="39.2872" y="80.5921" w="1.0032" h="0.86532" rotdeg="39.4611"/>
+%  <line x1="38.7009" y1="81.2783" x2="46.4822" y2="87.3286" arr2="h40"/>
+%  <text x="42.909" y="80.9118" t="p" tex="$\vc{p}$" h="3.63636"/>
+%  <star x="77.021" y="93.8711" d="0,5"/>
+%  <line x1="136.436" y1="76.4769" x2="109.43" y2="100.176"/>
+%  <text x="30.5153" y="65.7024" t="а)" h="5"/>
+%  <text x="76.8573" y="65.8163" t="б)" h="5"/>
+%  <curve closed="1">48.2431,98.6035 35.0401,111.099 37.7614,111.766 43.2884,110.631 47.5812,105.567</curve>
+%  <text x="17.0387" y="83.982" t="Y" tex="$\st{Y}$" h="4.84"/>
+%  <curve closed="1">79.24,84.1839 66.037,96.6798 68.7583,97.3466 74.2853,96.2116 78.5782,91.1475</curve>
+%  <line x1="77.3247" y1="84.9782" x2="77.3247" y2="84.9782"/>
+%  <line x1="90.6319" y1="76.698" x2="67.0344" y2="106.586"/>
+%  <text x="82.7206" y="97.3786" t="X" tex="$\st{X}$" h="4.84"/>
+%  <rect x="86.7497" y="81.7613" w="1.0032" h="0.86532" rotdeg="39.4611"/>
+%  <line x1="86.1634" y1="82.4474" x2="93.9448" y2="88.4977" arr2="h40"/>
+%  <text x="90.3715" y="82.0809" t="p" tex="$\vc{p}$" h="3.63636"/>
+%  <curve closed="1">93.3673,95.8267 80.1643,108.323 82.8856,108.989 88.4126,107.854 92.7054,102.79</curve>
+%  <text x="68.7882" y="85.7845" t="Y" tex="$\st{Y}$" h="4.84"/>
+%  <text x="121.004" y="65.7295" t="в)" h="5"/>
+%  <line x1="138.942" y1="104.4" x2="108.879" y2="77.1658"/>
+%  <text x="132.507" y="103.955" t="X" tex="$\st{X}$" h="4.84"/>
+%  <text x="112.241" y="98.1093" t="Y" tex="$\st{Y}$" h="4.84"/>
+%</TpX>
+\begin{figure}[h]
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(2680.6, 1023.8)(0,0)
+  \put(0,0){\includegraphics{sep_sets}}
+  \put(611.77,730.75){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(719.97,348.01){\fontsize{10.35}{12.41}\selectfont \makebox(40.7, 72.7)[l]{$\vc{p}$\strut}}
+  \put(472.10,37.00){\fontsize{14.23}{17.07}\selectfont \makebox(89.0, 100.0)[l]{а)\strut}}
+  \put(1398.94,39.28){\fontsize{14.23}{17.07}\selectfont \makebox(90.0, 100.0)[l]{б)\strut}}
+  \put(202.57,403.39){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{Y}$\strut}}
+  \put(1516.21,671.32){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(1669.22,371.39){\fontsize{10.35}{12.41}\selectfont \makebox(40.7, 72.7)[l]{$\vc{p}$\strut}}
+  \put(1237.56,439.44){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{Y}$\strut}}
+  \put(2281.87,37.54){\fontsize{14.23}{17.07}\selectfont \makebox(86.0, 100.0)[l]{в)\strut}}
+  \put(2511.93,802.85){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(2106.61,685.94){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{Y}$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:sep-sets}»ллюстраци€ теоремы о раздел€ющей гиперплоскости}
+\end{figure}

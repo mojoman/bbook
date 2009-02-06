@@ -1,0 +1,40 @@
+%<TpX v="3" l="3.05384" t="105.381" r="73.841" b="62.0011" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" IncludePath="pics/">
+%  <caption label="fig:segment">Отрезок</caption>
+%  <line x1="27.0391" y1="105.381" x2="27.0391" y2="62.0011" arr1="h44"/>
+%  <line x1="3.05384" y1="72.3165" x2="73.841" y2="72.3165" arr2="h44"/>
+%  <line x1="26.8709" y1="72.2576" x2="40.3221" y2="91.7619" arr2="h41"/>
+%  <line x1="27.0391" y1="72.2576" x2="60.3309" y2="84.8681" arr2="h41"/>
+%  <line x1="60.9783" y1="84.927" x2="41.3059" y2="91.8208" arr2="h41"/>
+%  <line x1="27.2072" y1="72.2576" x2="7.53479" y2="78.9832" arr2="h41"/>
+%  <text x="23.1719" y="66.8771" t="0" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="53.269" y="76.6293" t="x1" tex="$\vc{x}&apos;$" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="31.2426" y="86.5495" t="x2" tex="$\vc{x}&apos;&apos;$" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="48.0567" y="90.0805" t="x2-x1" tex="$\vc{x}&apos;&apos;-\vc{x}&apos;$" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="9.19095" y="80.135" t="x2-x1" tex="$\vc{x}&apos;&apos;-\vc{x}&apos;$" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%</TpX>
+\begin{figure}
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(1495.7, 947.6)(0,0)
+  \put(0,0){\includegraphics{pics/segment}}
+  \put(442.36,117.52){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{0\strut}}
+  \put(1044.30,312.56){\fontsize{11.38}{13.66}\selectfont \makebox(84.0, 80.0)[l]{$\vc{x}'$\strut}}
+  \put(603.78,510.97){\fontsize{11.38}{13.66}\selectfont \makebox(84.0, 80.0)[l]{$\vc{x}''$\strut}}
+  \put(940.06,581.59){\fontsize{11.38}{13.66}\selectfont \makebox(194.4, 80.0)[l]{$\vc{x}''-\vc{x}'$\strut}}
+  \put(162.74,382.68){\fontsize{11.38}{13.66}\selectfont \makebox(194.4, 80.0)[l]{$\vc{x}''-\vc{x}'$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:segment}Отрезок}
+\end{figure}

@@ -1,0 +1,28 @@
+%<TpX v="3" l="10.585" t="99.4845" r="53.6238" b="68.1321" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigurePlacement="h">
+%  <caption label="fig:sup-hplane">Пример опорной гиперплоскости</caption>
+%  <curve closed="1">23.6497,92.4056 41.3968,74.7327 36.7653,77.4403 28.6941,77.104 20.7911,82.6529</curve>
+%  <star x="22.0807" y="79.9576" d="0,5"/>
+%  <line x1="16.9334" y1="85.82" x2="16.9334" y2="85.82"/>
+%  <line x1="10.585" y1="92.8514" x2="30.4695" y2="70.5849"/>
+%  <text x="23.5917" y="81.5397" t="x_hat" tex="$\vc{\hat x}$" h="4"/>
+%  <text x="43.8938" y="85.5525" t="X" tex="$\st{X}$" h="4.84"/>
+%  <text x="12.7724" y="92.8539" t="H" tex="$\st{H}$" h="4.84"/>
+%  <rect x="24.6429" y="77.0908" w="1.0032" h="0.865322" rotdeg="221.398"/>
+%  <line x1="25.2521" y1="76.4249" x2="17.6796" y2="70.1151" arr2="h40"/>
+%  <text x="20.4863" y="69.1969" t="p" tex="$\vc{p}$" h="4.84"/>
+%</TpX>
+\begin{figure}[h]
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(940.8, 707.0)(0,0)
+  \put(0,0){\includegraphics{sup_hplane}}
+  \put(300.13,288.15){\fontsize{11.38}{13.66}\selectfont \makebox(196.0, 80.0)[l]{$\vc{\hat x}$\strut}}
+  \put(706.18,364.21){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(83.75,510.24){\fontsize{13.77}{16.52}\selectfont \makebox(69.7, 96.8)[l]{$\st{H}$\strut}}
+  \put(238.03,37.10){\fontsize{13.77}{16.52}\selectfont \makebox(54.2, 96.8)[l]{$\vc{p}$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:sup-hplane}Пример опорной гиперплоскости}
+\end{figure}

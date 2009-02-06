@@ -1,0 +1,35 @@
+%<TpX v="3" l="-15.916" t="48.8136" r="53.8027" b="-7.99545" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="4" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3">
+%  <caption label="fig:hypermap">Семейство гиперплоскостей</caption>
+%  <line x1="0.0233379" y1="48.8136" x2="0.0117649" y2="-7.99545" arr1="h44"/>
+%  <line x1="-15.4124" y1="0.166404" x2="53.8027" y2="0.237714" arr2="h44"/>
+%  <line x1="-0.0401801" y1="0.165364" x2="6.40742" y2="10.3682" arr2="h40" li="dash"/>
+%  <text x="-3.0678" y="-4.19819" t="0" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <rect x="-0.00236214" y="0.225455" w="1.86288" h="1.75027" rotdeg="328.718"/>
+%  <line x1="-15.5803" y1="9.90027" x2="13.0602" y2="-7.7856"/>
+%  <line x1="-15.916" y1="26.1795" x2="36.5758" y2="-7.37971"/>
+%  <line x1="-15.7481" y1="42.2907" x2="46.5153" y2="2.68378"/>
+%  <text x="5.23014" y="2.7102" t="p" tex="$\vc{p}$" h="4"/>
+%  <text x="10.7683" y="-5.20403" t="px=0" tex="$\vc{p} \cdot \vc{x}=0$" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="20.6529" y="4.52986" t="px=1" tex="$\vc{p} \cdot \vc{x}=1$" h="4"/>
+%  <text x="31.2432" y="14.4316" t="px=2" tex="$\vc{p} \cdot \vc{x}=2$" h="4"/>
+%</TpX>
+\begin{figure}
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(1474.4, 1216.2)(0,0)
+  \put(0,0){\includegraphics{hypermap}}
+  \put(296.96,95.95){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{0\strut}}
+  \put(462.92,234.11){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{$\vc{p}$\strut}}
+  \put(573.69,75.83){\fontsize{11.38}{13.66}\selectfont \makebox(175.2, 80.0)[l]{$\vc{p} \cdot \vc{x}=0$\strut}}
+  \put(771.38,270.51){\fontsize{11.38}{13.66}\selectfont \makebox(175.2, 80.0)[l]{$\vc{p} \cdot \vc{x}=1$\strut}}
+  \put(983.18,468.54){\fontsize{11.38}{13.66}\selectfont \makebox(175.2, 80.0)[l]{$\vc{p} \cdot \vc{x}=2$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:hypermap}Семейство гиперплоскостей}
+\end{figure}
