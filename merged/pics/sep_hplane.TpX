@@ -1,0 +1,47 @@
+%<TpX v="3" l="2.98789" t="111.826" r="106.439" b="59.7309" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigurePlacement="h">
+%  <caption label="fig:sep-hplane">Иллюстрация теоремы отделимости</caption>
+%  <curve closed="1">33.3811,79.8683 12.1176,99.993 16.5003,101.067 25.4015,99.239 32.3152,91.0833</curve>
+%  <star x="42.8464" y="99.3182" d="0,5"/>
+%  <line x1="37.6565" y1="87.7062" x2="37.6565" y2="87.7062"/>
+%  <line x1="45.3636" y1="81.9938" x2="29.9787" y2="107.577"/>
+%  <text x="39.7331" y="101.516" t="x_hat" tex="$\vc{\hat x}$" h="3.6364"/>
+%  <text x="12.3952" y="81.848" t="X" tex="$\st{X}$" h="4.84"/>
+%  <text x="18.4921" y="108.989" t="px=gamma" tex="$\vc{p} \cdot \vc{x}= \gamma$" h="3.63636"/>
+%  <rect x="42.3024" y="87.5918" w="1.0032" h="0.865321" rotdeg="30.6534"/>
+%  <line x1="41.8281" y1="88.3596" x2="50.4441" y2="93.1471" arr2="h40"/>
+%  <text x="46.0267" y="85.9781" t="p" tex="$\vc{p}$" h="3.63636"/>
+%  <line x1="42.8848" y1="99.4474" x2="31.5657" y2="92.8443" li="dot"/>
+%  <curve closed="1">94.0753,84.1641 67.7795,97.0354 71.6426,99.3674 80.6842,100.275 89.7147,94.5515</curve>
+%  <star x="90.1587" y="94.1495" d="0,5"/>
+%  <line x1="86.6695" y1="90.5427" x2="86.6695" y2="90.5427"/>
+%  <line x1="103.203" y1="79.2912" x2="80.9563" y2="104.99"/>
+%  <text x="90.1658" y="95.4678" t="x_hat" tex="$\vc{\hat x}$" h="3.6364"/>
+%  <text x="71.0882" y="80.2057" t="X" tex="$\st{X}$" h="4.84"/>
+%  <text x="71.9733" y="106.954" t="px=gamma" tex="$\vc{p} \cdot \vc{x}= \gamma$" h="3.63636"/>
+%  <rect x="99.3842" y="83.8856" w="1.0032" h="0.865326" rotdeg="40.6406"/>
+%  <line x1="98.784" y1="84.5595" x2="106.439" y2="90.7687" arr2="h40"/>
+%  <text x="102.95" y="84.1589" t="p" tex="$\vc{p}$" h="3.63636"/>
+%  <text x="19.0186" y="60.8309" t="а)" h="5"/>
+%  <text x="79.6943" y="60.9274" t="б)" h="5"/>
+%</TpX>
+\begin{figure}[h]
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(2149.0, 1121.9)(0,0)
+  \put(0,0){\includegraphics{sep_hplane}}
+  \put(774.90,857.51){\fontsize{10.35}{12.41}\selectfont \makebox(178.2, 72.7)[l]{$\vc{\hat x}$\strut}}
+  \put(228.15,458.14){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(350.08,1006.98){\fontsize{10.35}{12.41}\selectfont \makebox(362.2, 72.7)[l]{$\vc{p} \cdot \vc{x}= \gamma$\strut}}
+  \put(900.78,546.76){\fontsize{10.35}{12.41}\selectfont \makebox(40.7, 72.7)[l]{$\vc{p}$\strut}}
+  \put(1783.56,736.56){\fontsize{10.35}{12.41}\selectfont \makebox(178.2, 72.7)[l]{$\vc{\hat x}$\strut}}
+  \put(1402.01,425.30){\fontsize{13.77}{16.52}\selectfont \makebox(63.9, 96.8)[l]{$\st{X}$\strut}}
+  \put(1419.71,966.27){\fontsize{10.35}{12.41}\selectfont \makebox(362.2, 72.7)[l]{$\vc{p} \cdot \vc{x}= \gamma$\strut}}
+  \put(2039.24,510.38){\fontsize{10.35}{12.41}\selectfont \makebox(40.7, 72.7)[l]{$\vc{p}$\strut}}
+  \put(360.62,37.00){\fontsize{14.23}{17.07}\selectfont \makebox(89.0, 100.0)[l]{а)\strut}}
+  \put(1574.13,38.93){\fontsize{14.23}{17.07}\selectfont \makebox(90.0, 100.0)[l]{б)\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:sep-hplane}Иллюстрация теоремы отделимости}
+\end{figure}

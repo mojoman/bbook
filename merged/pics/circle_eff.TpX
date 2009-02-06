@@ -1,0 +1,30 @@
+%<TpX v="3" l="86.2449" t="105.686" r="133.758" b="64.4554" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" FontName="Arial" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigurePlacement="h" IncludePath="pics/">
+%  <caption label="fig:circle_eff">Пример эффективной точки, в которой $\vc{p} \geq \vc{0}$</caption>
+%  <line x1="108.076" y1="105.686" x2="108.095" y2="64.4554" arr1="h44"/>
+%  <line x1="86.2449" y1="82.1645" x2="133.758" y2="82.1645" arr2="h44"/>
+%  <text x="104.831" y="78.234" t="0" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <star x="108.073" y="95.9636" d="0,400000005960464"/>
+%  <text x="104.732" y="97.2068" t="A" h="4"/>
+%  <circle x="115.897" y="94.6612" d="0"/>
+%  <circle x="108.081" y="82.2307" d="27.2653"/>
+%  <line x1="95.986" y1="95.9897" x2="120.148" y2="96.0338" li="dash"/>
+%  <line x1="115.886" y1="102.523" x2="115.899" y2="96.1317" arr1="h20"/>
+%  <rect x="115.895" y="96.8231" w="0.793625" h="0.705452" rotdeg="269.999"/>
+%  <text x="117.857" y="97.777" t="p" tex="$\vc{p}$" h="4"/>
+%</TpX>
+\begin{figure}[h]
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(1030.3, 904.6)(0,0)
+  \put(0,0){\includegraphics{pics/circle_eff}}
+  \put(411.72,295.57){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{0\strut}}
+  \put(409.74,675.03){\fontsize{11.38}{13.66}\selectfont \makebox(53.6, 80.0)[l]{A\strut}}
+  \put(672.25,686.43){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{$\vc{p}$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:circle_eff}Пример эффективной точки, в которой $\vc{p} \geq \vc{0}$}
+\end{figure}

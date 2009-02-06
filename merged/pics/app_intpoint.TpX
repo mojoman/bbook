@@ -1,0 +1,30 @@
+%<TpX v="3" l="10.9683" t="107.435" r="55.2359" b="69.5084" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigure="floatingfigure" TeXFigurePlacement="p" IncludePath="pics/">
+%  <caption label="fig:int_point">√ранична€ и внутренн€€ точки множества $\st{X}$</caption>
+%  <text x="14.3169" y="103.282" t="x_bar" tex="$\vc{\bar x}$" h="5.324">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <curve closed="1" ha="3">13.723,92.8015 42.1165,100.383 47.4681,69.611 29.4806,83.7335</curve>
+%  <star x="14.4089" y="99.4146" d="0,5"/>
+%  <circle x="14.3248" y="99.4146" d="6.71303" li="dash"/>
+%  <text x="27.0039" y="93.809" t="x_tilde" tex="$\vc{\tilde x}$" h="5.324">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <star x="26.7472" y="92.6924" d="0,5"/>
+%  <text x="42.7976" y="81.7436" t="X" tex="$\st{X}$" h="5.324">
+%  <font face="Arial" charset="204"/>
+%</text>
+%</TpX>
+\begin{floatingfigure}[p]{49 mm}
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(965.4, 838.5)(0,0)
+  \put(0,0){\includegraphics{pics/app_intpoint}}
+  \put(106.97,688.85){\fontsize{15.15}{18.18}\selectfont \makebox(266.2, 106.5)[l]{$\vc{\bar x}$\strut}}
+  \put(360.71,499.39){\fontsize{15.15}{18.18}\selectfont \makebox(307.7, 106.5)[l]{$\vc{\tilde x}$\strut}}
+  \put(676.59,258.08){\fontsize{15.15}{18.18}\selectfont \makebox(70.3, 106.5)[l]{$\st{X}$\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:int_point}√ранична€ и внутренн€€ точки множества $\st{X}$}
+\end{floatingfigure}

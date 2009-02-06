@@ -1,0 +1,28 @@
+%<TpX v="3" l="13.668" t="99.8714" r="52.0749" b="64.8979" PdfTeXFormat="none" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="1" Border="2" PicUnitLength="0.05" HatchingStep="2" DottedSize="0,5" DashSize="1" TeXMinLine="0.1" LineWidth="0.3" TeXFigure="floatingfigure" TeXFigurePlacement="p" IncludePath="pics/">
+%  <caption label="fig:vector">Вектор</caption>
+%  <line x1="20.0661" y1="99.8714" x2="20.0981" y2="65.8798" arr1="h44"/>
+%  <line x1="13.668" y1="70.0479" x2="52.0749" y2="69.9959" arr2="h44"/>
+%  <line x1="19.8964" y1="70.0479" x2="39.6351" y2="84.6808" arr2="h41"/>
+%  <line x1="40.1907" y1="84.9544" x2="20.1048" y2="84.9544" li="dash"/>
+%  <line x1="40.1086" y1="84.9544" x2="39.9823" y2="70.0479" li="dash"/>
+%  <text x="16.1066" y="82.4279" t="3" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <text x="38.6448" y="65.7779" t="4" h="4">
+%  <font face="Arial" charset="204"/>
+%</text>
+%  <star x="40.039" y="85.0017" d="0,5"/>
+%</TpX>
+\begin{floatingfigure}[p]{43 mm}
+\centering
+\ifpdf
+\else
+  \setlength{\unitlength}{0.05 mm}%
+  \begin{picture}(848.1, 779.5)(0,0)
+  \put(0,0){\includegraphics{pics/app_vector}}
+  \put(88.77,370.60){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{3\strut}}
+  \put(539.54,37.60){\fontsize{11.38}{13.66}\selectfont \makebox(44.8, 80.0)[l]{4\strut}}
+  \end{picture}%
+\fi
+\caption{\label{fig:vector}Вектор}
+\end{floatingfigure}
