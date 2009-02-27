@@ -1,0 +1,77 @@
+
+MathEconBook=/home/wart/Projects/Studies/Borisov_Book/git/merged CD=. {
+ Makefile
+ MathEconBook.prj
+ MathEconBook.vimprj
+ bibliography.tex
+ main.tex
+ Borisov=Borisov {
+  01_predvelich.tex
+  02_linear.tex
+  03_convex.tex
+  04_nelin-opt.tex
+  05_convex_part2.tex
+ }
+ Common=Common {
+  appendix.tex
+  designations.tex
+  raznoe.tex
+ }
+ Pecherskiy=Pecherskiy {
+  06_gen_equil.tex
+  07_pure_exchange.tex
+  08_game_theory_1.tex
+  09_game_theory_2.tex
+  10_game_theory_3.tex
+  11_game_theory_4.tex
+ }
+ pics=pics {
+  3dplane.eps.bb
+  3dplane.eps.gz
+  app_intpoint.TpX
+  app_intpoint.eps
+  app_vector.TpX
+  app_vector.eps
+  circle_eff.TpX
+  circle_eff.eps
+  concave_function.eps.bb
+  concave_function.eps.gz
+  convex.eps.bb
+  convex.eps.gz
+  hypermap.TpX
+  hypermap.eps
+  line.eps
+  noirreversibility.eps.bb
+  noirreversibility.eps.gz
+  ppfront_max.TpX
+  ppfront_max.eps
+  ppfrontier.TpX
+  ppfrontier.eps
+  primaldual.eps.bb
+  primaldual.eps.gz
+  scheme.eps.bb
+  scheme.eps.gz
+  segment.TpX
+  segment.eps
+  sep_hplane.TpX
+  sep_hplane.eps
+  sep_sets.TpX
+  sep_sets.eps
+  sup_hplane.TpX
+  sup_hplane.eps
+ }
+ zadach=zadach {
+  zadach=zadach {
+   zadach1.doc
+   zadach10.doc
+   zadach2.doc
+   zadach3.doc
+   zadach4.doc
+   zadach5.doc
+   zadach6.doc
+   zadach7.doc
+   zadach8.doc
+   zadach9.doc
+  }
+ }
+}
